@@ -45,11 +45,11 @@ const Banner = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-      <div className="absolute inset-0 flex flex-col justify-center items-center gap-4 md:gap-6 lg:gap-8 z-10 bg-black bg-opacity-50  text-white p-8 text-center overflow-hidden">
+      <div className="absolute inset-0 flex flex-col justify-center items-center gap-4 md:gap-6 lg:gap-8 z-10 bg-[#000] bg-opacity-50  text-white p-8 text-center overflow-hidden">
         <h2 className="text-base md:text-3xl lg:text-4xl font-bold">
           Your Property Is Our Priority
         </h2>
-        <p className="text-xs md:text-lg max-w-[600px] px-4">
+        <p className="text-xs md:text-lg max-w-[600px] px-4 text-gray-400">
           At Luxe Estates, we redefine property management with excellence and
           personalized service. Trust us to prioritize your unique investment,
           from beachfront villas to exclusive penthouses.

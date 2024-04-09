@@ -1,0 +1,132 @@
+import { Typography } from "@material-tailwind/react";
+import { FaMap, FaPhoneAlt } from "react-icons/fa";
+import { BsSendFill } from "react-icons/bs";
+import { NavLink } from "react-router-dom";
+
+const Footer = () => {
+  return (
+    <footer className="bg-[#06112A] px-8 py-2 text-white">
+      <div className="grid grid-cols-1 md:grid-cols-2 place-items-center gap-2 text-center lg:text-left lg:flex lg:justify-between border-b border-[#848093] pb-4">
+        <div>
+          <Typography
+            as="h1"
+            className="mr-4 cursor-pointer py-1.5 text-lg font-extrabold"
+          >
+            Luxe Estates
+          </Typography>
+          <Typography as="p" className="text-xs max-w-[300px] text-[#848093]">
+            Luxe Estates: Redefining property management with excellence and
+            personalized service. Trust us to prioritize your unique investment.
+          </Typography>
+        </div>
+
+        <div className="flex flex-col items-center">
+          <Typography
+            as="h2"
+            className="mr-4 cursor-pointer py-1.5 text-lg font-extrabold"
+          >
+            Quick Links
+          </Typography>
+
+          {/* Nav Link  */}
+          <ul className="my-2 flex  gap-2 lg:mb-0 lg:mt-0 flex-row lg:items-center lg:gap-4">
+            <Typography
+              as="li"
+              variant="paragraph"
+              color="blue-gray"
+              className="font-bold hover:text-white text-[#848093]"
+            >
+              <NavLink
+                to="/"
+                className={({ isActive, isPending }) =>
+                  `${isActive ? "text-white" : ""} ${isPending ? "text-red-700" : ""}`
+                }
+              >
+                Home
+              </NavLink>
+            </Typography>
+            <Typography
+              as="li"
+              variant="paragraph"
+              color="blue-gray"
+              className="font-bold hover:text-white text-[#848093]"
+            >
+              <NavLink
+                to="/estates"
+                className={({ isActive, isPending }) =>
+                  `${isActive ? "text-white" : ""} ${isPending ? "text-red-700" : ""}`
+                }
+              >
+                Estates
+              </NavLink>
+            </Typography>
+            <Typography
+              as="li"
+              variant="paragraph"
+              color="blue-gray"
+              className="font-bold hover:text-white text-[#848093]"
+            >
+              <NavLink
+                to="/about"
+                className={({ isActive, isPending }) =>
+                  `${isActive ? "text-white" : ""} ${isPending ? "text-red-700" : ""}`
+                }
+              >
+                About
+              </NavLink>
+            </Typography>
+            <Typography
+              as="li"
+              variant="paragraph"
+              color="blue-gray"
+              className="font-bold hover:text-white text-[#848093]"
+            >
+              <NavLink
+                to="/contact"
+                className={({ isActive, isPending }) =>
+                  `${isActive ? "text-white" : ""} ${isPending ? "text-red-700" : ""}`
+                }
+              >
+                Contact
+              </NavLink>
+            </Typography>
+          </ul>
+        </div>
+
+        <div className="md:col-span-2">
+          <Typography
+            as="h2"
+            className="mr-4 cursor-pointer py-1.5 text-lg font-extrabold"
+          >
+            Have a questions?
+          </Typography>
+
+          <ul className="space-y-3 text-[#848093]">
+            <li className="flex gap-2 items-center">
+              <FaMap className="text-[#5EA51D]" />
+              <span className="text-xs">
+                Level-4, 34, Awal Centre, Banani, Dhaka
+              </span>
+            </li>
+            <li className="flex gap-2 items-center">
+              <FaPhoneAlt className="text-[#5EA51D]" />
+              <span className="text-xs">01322901105</span>
+            </li>
+            <li className="flex gap-2 items-center">
+              <BsSendFill className="text-[#5EA51D]" />
+              <span className="text-xs">web@programming-hero.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <Typography as="p" className="text-xs text-center text-[#848093] py-3">
+          Copyright ©2024 All rights reserved | This site is made with &#10084;
+          by Arnab Saha
+        </Typography>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
