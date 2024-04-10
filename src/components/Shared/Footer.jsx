@@ -1,7 +1,10 @@
 import { Typography } from "@material-tailwind/react";
 import { FaMap, FaPhoneAlt } from "react-icons/fa";
-import { BsSendFill } from "react-icons/bs";
+import { BsSendFill, BsTwitterX } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
+import { SlSocialFacebook } from "react-icons/sl";
+import { RiLinkedinLine } from "react-icons/ri";
+import { LuGithub } from "react-icons/lu";
 
 const Footer = () => {
   return (
@@ -18,6 +21,28 @@ const Footer = () => {
             Luxe Estates: Redefining property management with excellence and
             personalized service. Trust us to prioritize your unique investment.
           </Typography>
+          <ul className="flex items-center gap-4 mt-4 text-2xl text-white *:bg-[#5EA51D] *:p-2 *:rounded-full">
+            <li className="transition duration-300 ease-in-out hover:bg-[#06112A]">
+              <a href="https://www.facebook.com/arnabwrk/" target="_blank">
+                <SlSocialFacebook />
+              </a>
+            </li>
+            <li className="transition duration-300 ease-in-out hover:bg-[#06112A]">
+              <a href="https://twitter.com/arnabwrk/" target="_blank">
+                <BsTwitterX />
+              </a>
+            </li>
+            <li className="transition duration-300 ease-in-out hover:bg-[#06112A]">
+              <a href="https://www.linkedin.com/in/arnabw/" target="_blank">
+                <RiLinkedinLine />
+              </a>
+            </li>
+            <li className="transition duration-300 ease-in-out hover:bg-[#06112A]">
+              <a href="https://github.com/arnabw/" target="_blank">
+                <LuGithub />
+              </a>
+            </li>
+          </ul>
         </div>
 
         <div className="flex flex-col items-center">

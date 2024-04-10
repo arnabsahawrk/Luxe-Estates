@@ -1,0 +1,110 @@
+[
+  {
+    "id": "a12f3g4h",
+    "estate_title": "Stunning Beachfront Villa",
+    "segment_name": "Luxury",
+    "image": "https://i.postimg.cc/76KrrCnL/Stunning-Beachfront-Villa.jpg",
+    "description": "Experience luxury living with this stunning beachfront villa. Featuring panoramic ocean views, private beach access, and top-of-the-line amenities.",
+    "price": "$5,000,000",
+    "status": "sale",
+    "area": "5000 sq ft",
+    "location": "Malibu, California",
+    "facilities": ["Infinity Pool", "Private Gym", "Home Theater"]
+  },
+  {
+    "id": "b5g4j8s",
+    "estate_title": "Exclusive Oceanfront Penthouse",
+    "segment_name": "Luxury",
+    "image": "https://i.postimg.cc/L8jd6Q3w/Exclusive-Oceanfront-Penthouse.jpg",
+    "description": "Elevate your lifestyle with this exclusive oceanfront penthouse. Enjoy breathtaking views, modern design, and unparalleled luxury.",
+    "price": "$3,500,000",
+    "status": "sale",
+    "area": "3500 sq ft",
+    "location": "Miami, Florida",
+    "facilities": ["Private Terrace", "Spa", "Concierge Service"]
+  },
+  {
+    "id": "k9d3m2p",
+    "estate_title": "Private Island Retreat",
+    "segment_name": "Luxury",
+    "image": "https://i.postimg.cc/pXn4qc4r/Private-Island-Retreat.jpg",
+    "description": "Escape to your own private paradise with this exclusive island retreat. Complete privacy, pristine beaches, and endless possibilities await.",
+    "price": "$10,000,000",
+    "status": "sale",
+    "area": "100 acres",
+    "location": "Bora Bora, French Polynesia",
+    "facilities": ["Luxury Villas", "Helipad", "Marina"]
+  },
+  {
+    "id": "x7i2r9p",
+    "estate_title": "Majestic Mountain Chalet",
+    "segment_name": "Luxury",
+    "image": "https://i.postimg.cc/x1f7njqJ/Majestic-Mountain-Chalet.jpg",
+    "description": "Indulge in mountain luxury with this majestic chalet. Nestled in the heart of the Rockies, this retreat offers unparalleled elegance and serenity.",
+    "price": "$7,500,000",
+    "status": "sale",
+    "area": "6000 sq ft",
+    "location": "Aspen, Colorado",
+    "facilities": ["Ski-In/Ski-Out Access", "Sauna", "Wine Cellar"]
+  },
+  {
+    "id": "s5h8p3w",
+    "estate_title": "Historic Mansion",
+    "segment_name": "Luxury",
+    "image": "https://i.postimg.cc/prBZ68f0/Historic-Mansion.jpg",
+    "description": "Step back in time with this historic mansion. Impeccably restored and steeped in grandeur, this architectural masterpiece is a testament to timeless elegance.",
+    "price": "$12,000,000",
+    "status": "sale",
+    "area": "8000 sq ft",
+    "location": "Newport, Rhode Island",
+    "facilities": ["Ballroom", "Library", "Formal Gardens"]
+  },
+  {
+    "id": "t4y6z2u",
+    "estate_title": "Exquisite Lakeside Retreat",
+    "segment_name": "Luxury",
+    "image": "https://i.postimg.cc/c4bY4XLR/Exquisite-Lakeside-Retreat.jpg",
+    "description": "Discover tranquility at this exquisite lakeside retreat. Surrounded by pristine nature and offering unparalleled views, this sanctuary is the epitome of luxury living.",
+    "price": "$6,800,000",
+    "status": "sale",
+    "area": "4500 sq ft",
+    "location": "Lake Tahoe, California",
+    "facilities": ["Boat Dock", "Outdoor Kitchen", "Hot Tub"]
+  },
+  {
+    "id": "l9p2o5a",
+    "estate_title": "Elegant Vineyard Estate",
+    "segment_name": "Luxury",
+    "image": "https://i.postimg.cc/ryYzSz2c/Elegant-Vineyard-Estate.jpg",
+    "description": "Indulge in the ultimate wine country lifestyle with this elegant vineyard estate. Featuring sprawling vineyards, a luxurious residence, and world-class amenities, this property offers a truly unique experience.",
+    "price": "$9,500,000",
+    "status": "sale",
+    "area": "120 acres",
+    "location": "Napa Valley, California",
+    "facilities": ["Wine Cellar", "Tasting Room", "Guest House"]
+  },
+  {
+    "id": "r6q8d1s",
+    "estate_title": "Secluded Mountain Retreat",
+    "segment_name": "Luxury",
+    "image": "https://i.postimg.cc/wvXZ915N/Secluded-Mountain-Retreat.jpg",
+    "description": "Escape the ordinary at this secluded mountain retreat. Nestled among towering peaks and pristine forests, this sanctuary offers unparalleled privacy and serenity.",
+    "price": "$4,200,000",
+    "status": "sale",
+    "area": "3000 sq ft",
+    "location": "Jackson Hole, Wyoming",
+    "facilities": ["Hiking Trails", "Outdoor Fireplace", "Fitness Center"]
+  },
+  {
+    "id": "w3p5u9b",
+    "estate_title": "Luxurious Desert Oasis",
+    "segment_name": "Luxury",
+    "image": "https://i.postimg.cc/tTBddypf/Luxurious-Desert-Oasis.jpg",
+    "description": "Experience desert living at its finest with this luxurious oasis. Surrounded by endless desert vistas and offering unparalleled luxury, this property is a true gem of the Southwest.",
+    "price": "$3,000,000",
+    "status": "sale",
+    "area": "4000 sq ft",
+    "location": "Scottsdale, Arizona",
+    "facilities": ["Spa", "Infinity Pool", "Outdoor Entertainment Area"]
+  }
+]

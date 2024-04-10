@@ -74,7 +74,7 @@ export function NavList() {
       <div className="lg:hidden flex items-center gap-4 flex-wrap">
         <button
           rel="noopener noreferrer"
-          className="px-4 py-2 font-semibold text-sm md:text-base rounded-lg bg-[#5EA51D] text-white"
+          className="px-4 py-2 font-semibold text-sm md:text-base rounded-lg bg-[#5EA51D] text-white transition duration-300 ease-in-out hover:bg-[#06112A]"
         >
           Sign In
         </button>
@@ -129,7 +129,7 @@ const Nav = () => {
         <div className="hidden lg:flex items-center gap-4 flex-wrap">
           <button
             rel="noopener noreferrer"
-            className="lg:px-4 lg:py-2 font-semibold lg:text-base rounded-lg bg-[#5EA51D] text-white"
+            className="lg:px-4 lg:py-2 font-semibold lg:text-base rounded-lg bg-[#5EA51D] text-white transition duration-300 ease-in-out hover:bg-[#06112A]"
           >
             Sign In
           </button>

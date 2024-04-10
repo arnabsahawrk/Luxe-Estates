@@ -6,6 +6,9 @@ import { Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-fade";
 
+//Animate css
+import "animate.css";
+
 const Banner = () => {
   return (
     <div className="relative">
@@ -46,17 +49,17 @@ const Banner = () => {
         </Swiper>
       </div>
       <div className="absolute inset-0 flex flex-col justify-center items-center gap-4 md:gap-6 lg:gap-8 z-10 bg-[#000] bg-opacity-50  text-white p-8 text-center overflow-hidden">
-        <h2 className="text-base md:text-3xl lg:text-4xl font-bold">
+        <h2 className="text-base md:text-3xl lg:text-4xl font-bold animate__animated animate__slideInLeft">
           Your Property Is Our Priority
         </h2>
-        <p className="text-xs md:text-lg max-w-[600px] px-4 text-gray-400">
+        <p className="text-xs md:text-lg max-w-[600px] px-4 text-gray-400 animate__animated animate__slideInRight">
           At Luxe Estates, we redefine property management with excellence and
           personalized service. Trust us to prioritize your unique investment,
           from beachfront villas to exclusive penthouses.
         </p>
         <button
           rel="noopener noreferrer"
-          className="px-2 md:px-4 py-1 md:py-2 font-semibold text-xs md:text-base bg-[#5EA51D] rounded-lg transition duration-300 ease-in-out hover:bg-green-600"
+          className="px-2 md:px-4 py-1 md:py-2 font-semibold text-xs md:text-base bg-[#5EA51D] rounded-lg transition duration-300 ease-in-out hover:bg-[#06112A] animate__animated animate__slideInUp"
         >
           View Estates
         </button>

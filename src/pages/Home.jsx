@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import Banner from "../components/Banner/Banner";
+import HowWorks from "../components/HowWorks/HowWorks";
 
 const Home = () => {
   return (
@@ -7,8 +8,9 @@ const Home = () => {
       <Helmet>
         <title>Home</title>
       </Helmet>
-      <section>
+      <section className="space-y-4 md:space-y-8">
         <Banner />
+        <HowWorks />
       </section>
     </>
   );
