@@ -10,7 +10,10 @@ AOS.init();
 const HowWorks = () => {
   return (
     <section className="text-center space-y-4 md:space-y-8">
-      <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#5EA51D]">
+      <h1
+        id="how-it-works"
+        className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#5EA51D]"
+      >
         How It Works
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-3 relative">
@@ -18,6 +21,7 @@ const HowWorks = () => {
           data-aos="fade-right"
           data-aos-duration="3000"
           data-aos-delay="500"
+          data-aos-anchor="#how-it-works"
           className="flex justify-center items-center flex-col space-y-2 px-4"
         >
           <TbHomeSearch className="text-4xl text-[#5EA51D] font-bold" />
@@ -32,6 +36,7 @@ const HowWorks = () => {
         <div
           data-aos="zoom-in"
           data-aos-duration="2000"
+          data-aos-anchor="#how-it-works"
           className="flex justify-center items-center flex-col space-y-2 px-4"
         >
           <CiDollar className="text-4xl text-[#5EA51D] font-bold" />
@@ -47,6 +52,7 @@ const HowWorks = () => {
           data-aos="fade-left"
           data-aos-duration="3000"
           data-aos-delay="1000"
+          data-aos-anchor="#how-it-works"
           className="flex justify-center items-center flex-col md:col-span-2 lg:col-auto space-y-2 px-4"
         >
           <RiHomeHeartLine className="text-4xl text-[#5EA51D] font-bold" />
