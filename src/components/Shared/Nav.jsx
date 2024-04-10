@@ -98,8 +98,8 @@ const Nav = () => {
   }, []);
 
   return (
-    <Navbar className="shadow-none py-2 bg-[#06112A] backdrop-saturate-0 backdrop-blur-0 bg-opacity-100 border-none rounded-none">
-      <div className="flex items-center justify-between">
+    <Navbar className="shadow-none py-2 bg-[#06112A] backdrop-saturate-0 backdrop-blur-0 bg-opacity-100 border-none rounded-none max-w-full">
+      <div className="flex items-center justify-between container mx-auto">
         <Link to="/">
           <Typography
             as="h1"

@@ -9,7 +9,7 @@ AOS.init();
 
 const HowWorks = () => {
   return (
-    <section className="text-center space-y-4 md:space-y-8">
+    <section className="text-center space-y-4 md:space-y-8 container mx-auto">
       <h1
         id="how-it-works"
         className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#5EA51D]"
@@ -20,7 +20,7 @@ const HowWorks = () => {
         <div
           data-aos="fade-right"
           data-aos-duration="3000"
-          data-aos-delay="500"
+          data-aos-delay="300"
           data-aos-anchor="#how-it-works"
           className="flex justify-center items-center flex-col space-y-2 px-4"
         >
@@ -51,7 +51,7 @@ const HowWorks = () => {
         <div
           data-aos="fade-left"
           data-aos-duration="3000"
-          data-aos-delay="1000"
+          data-aos-delay="300"
           data-aos-anchor="#how-it-works"
           className="flex justify-center items-center flex-col md:col-span-2 lg:col-auto space-y-2 px-4"
         >

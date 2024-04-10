@@ -4,7 +4,7 @@
     "name": "John Smith",
     "position": "Senior Sales Agent",
     "image": "https://i.postimg.cc/m2KZFRSX/agnt1.jpg",
-    "description": "With over 10 years of experience in the real estate industry, John is dedicated to helping clients find their dream homes. His expertise in negotiation and market analysis ensures that every transaction is smooth and successful.",
+    "description": "John has 10+ years of experience helping clients find their dream homes.",
     "phone": "+1 (123) 456-7890",
     "email": "john.smith@luxe-estate.com"
   },
@@ -13,7 +13,7 @@
     "name": "Emily Johnson",
     "position": "Property Manager",
     "image": "https://i.postimg.cc/Bb4P09mp/agnt2.jpg",
-    "description": "Emily specializes in property management services, ensuring that every rental property is well-maintained and profitable for our clients. Her attention to detail and proactive approach make her a valuable asset to our team.",
+    "description": "Emily ensures rental properties are profitable and well-maintained.",
     "phone": "+1 (234) 567-8901",
     "email": "emily.johnson@luxe-estate.com"
   },
@@ -22,7 +22,7 @@
     "name": "Michael Williams",
     "position": "Luxury Real Estate Specialist",
     "image": "https://i.postimg.cc/fyyZX8yZ/agnt3.jpg",
-    "description": "Michael focuses on luxury real estate properties, offering personalized service to high-net-worth clients. With his extensive network and market knowledge, he consistently exceeds clients' expectations.",
+    "description": "Michael offers personalized service to high-net-worth clients, exceeding expectations.",
     "phone": "+1 (345) 678-9012",
     "email": "michael.williams@luxe-estate.com"
   },
@@ -31,7 +31,7 @@
     "name": "Jhankar Mahbub",
     "position": "Commercial Real Estate Broker",
     "image": "https://i.postimg.cc/1zBLHDLz/agnt4.png",
-    "description": "Jhankar specializes in commercial real estate, assisting clients in buying, selling, and leasing commercial properties. His strategic approach and strong negotiation skills ensure favorable outcomes for his clients.",
+    "description": "Jhankar specializes in commercial real estate transactions, ensuring favorable outcomes.",
     "phone": "+1 (456) 789-0123",
     "email": "jhankar.mahbub@luxe-estate.com"
   },
@@ -40,7 +40,7 @@
     "name": "David Miller",
     "position": "Investment Advisor",
     "image": "https://i.postimg.cc/jSpzF9Yg/agnt5.jpg",
-    "description": "David provides expert guidance to investors looking to maximize returns in the real estate market. His in-depth market analysis and investment strategies help clients make informed decisions and achieve their financial goals.",
+    "description": "David provides expert guidance to investors maximizing returns in real estate.",
     "phone": "+1 (567) 890-1234",
     "email": "david.miller@luxe-estate.com"
   },
@@ -49,7 +49,7 @@
     "name": "Sarah Wilson",
     "position": "Residential Real Estate Agent",
     "image": "https://i.postimg.cc/yNKD9zHH/agnt6.jpg",
-    "description": "Sarah specializes in residential real estate, assisting homebuyers and sellers with their property needs. Her personalized approach and dedication to client satisfaction ensure a seamless and enjoyable real estate experience.",
+    "description": "Sarah assists homebuyers and sellers, ensuring a seamless experience.",
     "phone": "+1 (678) 901-2345",
     "email": "sarah.wilson@luxe-estate.com"
   },
@@ -58,7 +58,7 @@
     "name": "Robert Taylor",
     "position": "Rental Specialist",
     "image": "https://i.postimg.cc/g05ksF9j/agnt7.jpg",
-    "description": "Robert focuses on rental properties, helping tenants find their ideal homes and landlords secure reliable tenants. His professionalism and commitment to customer service make him a trusted advisor in the rental market.",
+    "description": "Robert helps tenants find ideal homes and landlords secure reliable tenants.",
     "phone": "+1 (789) 012-3456",
     "email": "robert.taylor@luxe-estate.com"
   }

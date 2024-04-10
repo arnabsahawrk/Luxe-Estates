@@ -9,7 +9,7 @@ import { LuGithub } from "react-icons/lu";
 const Footer = () => {
   return (
     <footer className="bg-[#06112A] px-8 py-2 text-white">
-      <div className="grid grid-cols-1 md:grid-cols-2 place-items-center gap-2 text-center lg:text-left lg:flex lg:justify-between border-b border-[#848093] pb-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 place-items-center gap-2 text-center lg:text-left lg:flex lg:justify-between border-b border-[#848093] pb-4 container mx-auto">
         <div>
           <Typography
             as="h1"
@@ -21,7 +21,7 @@ const Footer = () => {
             Luxe Estates: Redefining property management with excellence and
             personalized service. Trust us to prioritize your unique investment.
           </Typography>
-          <ul className="flex items-center gap-4 mt-4 text-2xl text-white *:bg-[#5EA51D] *:p-2 *:rounded-full">
+          <ul className="flex items-center gap-4 mt-4 text-2xl text-white *:bg-[#5EA51D] *:p-2 *:rounded-full justify-center md:justify-normal">
             <li className="transition duration-300 ease-in-out hover:bg-[#06112A]">
               <a href="https://www.facebook.com/arnabwrk/" target="_blank">
                 <SlSocialFacebook />

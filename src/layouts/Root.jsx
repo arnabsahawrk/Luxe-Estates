@@ -21,7 +21,7 @@ const Root = () => {
       {spinner ? (
         <Spinner />
       ) : (
-        <main>
+        <main className="text-pretty">
           <Nav />
           <Outlet />
           <Footer />

@@ -29,21 +29,18 @@ const Banner = () => {
             <img
               className="w-full object-cover"
               src="https://i.postimg.cc/xqrGswmT/banner-pic-3.jpg"
-              alt=""
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
               className="w-full object-cover"
               src="https://i.postimg.cc/d1jH9v4J/banner-pic-1.jpg"
-              alt=""
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
               className="w-full object-cover"
               src="https://i.postimg.cc/wB3VjQ9z/banner-pic-2.jpg"
-              alt=""
             />
           </SwiperSlide>
         </Swiper>
