@@ -7,18 +7,18 @@ const FunFacts = () => {
 
   return (
     <section className="bg-[#5EA51D] text-white py-10 px-4">
-      <ScrollTrigger
-        onEnter={() => {
-          setCountOn(true);
-        }}
-        onExit={() => {
-          setCountOn(false);
-        }}
-      >
-        <div className="container mx-auto text-center space-y-6">
-          <h1 className="text-bold text-2xl md:text-3xl lg:text-4xl">
-            Some Fun Facts
-          </h1>
+      <div className="container mx-auto text-center space-y-6">
+        <h1 className="text-bold text-2xl md:text-3xl lg:text-4xl">
+          Some Fun Facts
+        </h1>
+        <ScrollTrigger
+          onEnter={() => {
+            setCountOn(true);
+          }}
+          onExit={() => {
+            setCountOn(false);
+          }}
+        >
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             <div>
               <h2 className="text-xl md:text-2xl font-semibold">
@@ -59,8 +59,8 @@ const FunFacts = () => {
               <p className="text-sm md:text-base font-medium">Awards</p>
             </div>
           </div>
-        </div>
-      </ScrollTrigger>
+        </ScrollTrigger>
+      </div>
     </section>
   );
 };
