@@ -87,13 +87,13 @@ const EstateDetails = () => {
               <div className="space-x-4 pt-4">
                 <button
                   rel="noopener noreferrer"
-                  className="px-2 md:px-4 py-2 font-semibold text-sm md:text-base bg-[#06112A] rounded-lg transition duration-300 ease-in-out hover:bg-[#5EA51D] animate__animated animate__slideInUp text-white"
+                  className="px-2 md:px-4 py-2 font-semibold text-sm md:text-base bg-[#06112A] rounded-lg transition duration-1000 ease-in-out hover:bg-[#5EA51D] animate__animated animate__slideInUp text-white"
                 >
                   Buy Estates
                 </button>
                 <button
                   rel="noopener noreferrer"
-                  className="px-2 md:px-4 py-2 font-semibold text-sm md:text-base bg-[#5EA51D] rounded-lg transition duration-300 ease-in-out hover:bg-[#06112A] animate__animated animate__slideInUp text-white"
+                  className="px-2 md:px-4 py-2 font-semibold text-sm md:text-base bg-[#5EA51D] rounded-lg transition duration-1000 ease-in-out hover:bg-[#06112A] animate__animated animate__slideInUp text-white"
                 >
                   Contact Agent
                 </button>

@@ -24,7 +24,7 @@ const Estates = () => {
           <Link to="/estates">
             <button
               rel="noopener noreferrer"
-              className="px-2 md:px-4 py-1 md:py-2 font-semibold text-xs md:text-base bg-[#5EA51D] rounded-lg transition duration-300 ease-in-out hover:bg-[#06112A] animate__animated animate__slideInUp text-white mx-auto"
+              className="px-2 md:px-4 py-1 md:py-2 font-semibold text-xs md:text-base bg-[#5EA51D] rounded-lg transition duration-1000 ease-in-out hover:bg-[#06112A] animate__animated animate__slideInUp text-white mx-auto"
             >
               View All Estates
             </button>
