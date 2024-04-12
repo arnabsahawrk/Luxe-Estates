@@ -5,6 +5,7 @@ import Estates from "../pages/Estates";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
 import ErrorPage from "../pages/ErrorPage";
+import EstateDetails from "../pages/EstateDetails";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/estates/:id",
+        element: <EstateDetails />,
       },
     ],
   },

@@ -1,10 +1,9 @@
-import useAgentsData from "../../hooks/useAgentsData";
-
 import { Carousel } from "@material-tailwind/react";
 import AgentsCard from "./AgentsCard";
+import useData from "../../hooks/useData";
 
 const Agents = () => {
-  const { agents } = useAgentsData();
+  const { agents } = useData();
 
   return (
     <section className="text-center space-y-4 container mx-auto">
