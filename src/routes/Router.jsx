@@ -8,6 +8,7 @@ import ErrorPage from "../pages/ErrorPage";
 import EstateDetails from "../pages/EstateDetails";
 import SignUp from "../pages/SignUp";
 import SignIn from "../pages/SignIn";
+import UpdateUserProfile from "../pages/UpdateUserProfile";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
       {
         path: "/signUp",
         element: <SignUp />,
+      },
+      {
+        path: "/updateProfile",
+        element: <UpdateUserProfile />,
       },
     ],
   },

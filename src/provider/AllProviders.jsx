@@ -1,8 +1,13 @@
 import PropTypes from "prop-types";
 import DataContexts from "../components/contexts/DataContexts";
+import AuthContexts from "../components/contexts/AuthContexts";
 
 const AllProviders = ({ children }) => {
-  return <DataContexts>{children}</DataContexts>;
+  return (
+    <AuthContexts>
+      <DataContexts>{children}</DataContexts>
+    </AuthContexts>
+  );
 };
 
 AllProviders.propTypes = {

@@ -21,23 +21,23 @@ const Footer = () => {
             Luxe Estates: Redefining property management with excellence and
             personalized service. Trust us to prioritize your unique investment.
           </Typography>
-          <ul className="flex items-center gap-4 mt-4 text-2xl text-white *:bg-[#5EA51D] *:p-2 *:rounded-full justify-center md:justify-normal">
-            <li className="transition duration-1000 ease-in-out hover:bg-[#06112A] animate__animated animate__slideInUp">
+          <ul className="flex items-center gap-4 mt-4 text-2xl text-white *:p-2 *:rounded-full justify-center md:justify-normal">
+            <li className="transition duration-1000 ease-in-out bg-[#3b5998] hover:bg-[#06112A] animate__animated animate__slideInUp">
               <a href="https://www.facebook.com/arnabwrk/" target="_blank">
                 <SlSocialFacebook />
               </a>
             </li>
-            <li className="transition duration-1000 ease-in-out hover:bg-[#06112A] animate__animated animate__slideInUp">
+            <li className="transition duration-1000 ease-in-out bg-[#14171A] hover:bg-[#06112A] animate__animated animate__slideInUp">
               <a href="https://twitter.com/arnabwrk/" target="_blank">
                 <BsTwitterX />
               </a>
             </li>
-            <li className="transition duration-1000 ease-in-out hover:bg-[#06112A] animate__animated animate__slideInUp">
+            <li className="transition duration-1000 ease-in-out bg-[#0a66c2] hover:bg-[#06112A] animate__animated animate__slideInUp">
               <a href="https://www.linkedin.com/in/arnabw/" target="_blank">
                 <RiLinkedinLine />
               </a>
             </li>
-            <li className="transition duration-1000 ease-in-out hover:bg-[#06112A] animate__animated animate__slideInUp">
+            <li className="transition duration-1000 ease-in-out bg-[#333333] hover:bg-[#06112A] animate__animated animate__slideInUp">
               <a href="https://github.com/arnabw/" target="_blank">
                 <LuGithub />
               </a>
