@@ -55,7 +55,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/updateProfile",
-        element: <UpdateUserProfile />,
+        element: (
+          <PrivateRoute>
+            <UpdateUserProfile />
+          </PrivateRoute>
+        ),
       },
     ],
   },

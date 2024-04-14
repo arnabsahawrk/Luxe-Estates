@@ -9,6 +9,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import useAuth from "../../hooks/useAuth";
 import toast from "react-hot-toast";
+import { useState } from "react";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Register = () => {
   const { user, setUser, createUser, updateUserProfile } = useAuth();
@@ -19,6 +21,7 @@ const Register = () => {
     formState: { errors },
   } = useForm();
   const navigate = useNavigate();
+  const [displayPass, setDisplayPass] = useState(false);
 
   //Register
   const handleRegister = (data) => {
@@ -177,34 +180,44 @@ const Register = () => {
             >
               Password
             </Typography>
-            <Input
-              {...register("password", {
-                required: {
-                  value: true,
-                  message: "Password is required.",
-                },
-                pattern: {
-                  value: /^(?=.*[A-Z])(?=.*[a-z])/,
-                  message: "Password must contain 1 upper & lower case letter.",
-                },
-                minLength: {
-                  value: 6,
-                  message: "Password must be at least 6 characters.",
-                },
-                maxLength: {
-                  value: 16,
-                  message: "Password must be in 16 characters.",
-                },
-              })}
-              name="password"
-              type="password"
-              size="lg"
-              placeholder="Choose A Password"
-              className=" !border-[#06112A] focus:!border-[#5EA51D]"
-              labelProps={{
-                className: "before:content-none after:content-none",
-              }}
-            />
+            <div className="relative">
+              <Input
+                {...register("password", {
+                  required: {
+                    value: true,
+                    message: "Password is required.",
+                  },
+                  pattern: {
+                    value: /^(?=.*[A-Z])(?=.*[a-z])/,
+                    message:
+                      "Password must contain 1 upper & lower case letter.",
+                  },
+                  minLength: {
+                    value: 6,
+                    message: "Password must be at least 6 characters.",
+                  },
+                  maxLength: {
+                    value: 16,
+                    message: "Password must be in 16 characters.",
+                  },
+                })}
+                name="password"
+                type={displayPass ? "text" : "password"}
+                size="lg"
+                placeholder="Choose A Password"
+                className=" !border-[#06112A] focus:!border-[#5EA51D]"
+                labelProps={{
+                  className: "before:content-none after:content-none",
+                }}
+              />
+
+              <span
+                className="absolute top-3 right-2 text-xl"
+                onClick={() => setDisplayPass(!displayPass)}
+              >
+                {displayPass ? <FaEye /> : <FaEyeSlash />}
+              </span>
+            </div>
             {errors.password && (
               <Typography
                 variant="paragraph"
