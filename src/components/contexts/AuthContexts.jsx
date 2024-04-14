@@ -39,7 +39,6 @@ const AuthContexts = ({ children }) => {
 
   //Update Profile
   const updateUserProfile = (name, url) => {
-    setLoading(true);
     return updateProfile(auth.currentUser, {
       displayName: name || user?.displayName,
       photoURL: url || user?.photoURL,
@@ -52,6 +51,7 @@ const AuthContexts = ({ children }) => {
   const githubProvider = new GithubAuthProvider();
 
   const signInWithMedium = (medium) => {
+    setLoading(true);
     switch (medium) {
       case "google":
         return signInWithPopup(auth, googleProvider);

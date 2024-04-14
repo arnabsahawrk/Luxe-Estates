@@ -15,47 +15,55 @@ const EstateCard = ({ estate, idx }) => {
     location,
   } = estate;
   return (
-    <Link to={`/estates/${id}`}>
-      <div
-        data-aos={idx % 2 === 0 ? "zoom-in" : "zoom-out"}
-        data-aos-duration={idx % 2 === 0 ? "2500" : "3000"}
-        data-aos-delay={idx % 2 === 0 || "300"}
-        data-aos-anchor="#featured-estates"
-        className="cursor-pointer rounded p-2 border border-gray-400"
-      >
-        <div className="relative ">
-          <img
-            className="object-cover h-52 w-full rounded"
-            src={image}
-            alt={estate_title}
-          />
-          <p className="absolute inset-0 flex items-end bg-black bg-opacity-50 hover:bg-transparent rounded">
-            <span className="bg-[#5EA51D] text-white m-2 p-1 rounded text-sm font-bold">
-              {price}
-            </span>
-          </p>
-        </div>
-        <div>
-          <h2 className="text-[#06112A] font-bold text-lg">{estate_title}</h2>
-          <ul className="flex items-center justify-between">
-            <li className="text-[#848093]">{segment_name}</li>
-            <li
-              className={`${status === "sale" ? "bg-[#5EA51D]" : "bg-[#06112A]"} text-white m-2 p-1 rounded text-xs`}
-            >
-              {status.toUpperCase().slice(0, 1) + status.slice(1).toLowerCase()}
-            </li>
-          </ul>
-          <ul className="flex items-center justify-between text-[#848093] text-sm border-t-2">
-            <li className="flex items-center gap-1">
-              <CiLocationOn /> {location}
-            </li>
-            <li className="flex items-center gap-1">
-              <FaRegBuilding /> {area}
-            </li>
-          </ul>
-        </div>
+    <div
+      data-aos={idx % 2 === 0 ? "zoom-in" : "zoom-out"}
+      data-aos-duration={idx % 2 === 0 ? "2500" : "3000"}
+      data-aos-delay={idx % 2 === 0 || "300"}
+      data-aos-anchor="#featured-estates"
+      className="rounded p-2 border border-gray-400"
+    >
+      <div className="relative ">
+        <img
+          className="object-cover h-52 w-full rounded"
+          src={image}
+          alt={estate_title}
+        />
+        <p className="absolute inset-0 flex items-end bg-black bg-opacity-50 hover:bg-transparent rounded">
+          <span className="bg-[#5EA51D] text-white m-2 p-1 rounded text-sm font-bold">
+            {price}
+          </span>
+          <span className="absolute inset-0 flex justify-center items-center">
+            <Link to={`/estates/${id}`}>
+              <button
+                rel="noopener noreferrer"
+                className="px-4 py-2 font-semibold text-base bg-[#5EA51D] transition duration-1000 ease-in-out hover:bg-[#06112A] animate__animated animate__slideInUp text-white cursor-pointer"
+              >
+                View Estate
+              </button>
+            </Link>
+          </span>
+        </p>
       </div>
-    </Link>
+      <div>
+        <h2 className="text-[#06112A] font-bold text-lg">{estate_title}</h2>
+        <ul className="flex items-center justify-between">
+          <li className="text-[#848093]">{segment_name}</li>
+          <li
+            className={`${status === "sale" ? "bg-[#5EA51D]" : "bg-[#06112A]"} text-white m-2 p-1 rounded text-xs`}
+          >
+            {status.toUpperCase().slice(0, 1) + status.slice(1).toLowerCase()}
+          </li>
+        </ul>
+        <ul className="flex items-center justify-between text-[#848093] text-sm border-t-2">
+          <li className="flex items-center gap-1">
+            <CiLocationOn /> {location}
+          </li>
+          <li className="flex items-center gap-1">
+            <FaRegBuilding /> {area}
+          </li>
+        </ul>
+      </div>
+    </div>
   );
 };
 

@@ -6,7 +6,7 @@ const EstatesPage = () => {
 
   return (
     <section>
-      <div className="container mx-auto space-y-4 ">
+      <div className="container mx-auto space-y-4 px-4 lg:px-0">
         <h1
           id="featured-estates"
           className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#5EA51D] text-center"
