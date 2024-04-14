@@ -9,6 +9,7 @@ import EstateDetails from "../pages/EstateDetails";
 import SignUp from "../pages/SignUp";
 import SignIn from "../pages/SignIn";
 import UpdateUserProfile from "../pages/UpdateUserProfile";
+import PrivateRoute from "../components/Private/PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -22,7 +23,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/estates",
-        element: <Estates />,
+        element: (
+          <PrivateRoute>
+            <Estates />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/about",
@@ -34,7 +39,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/estates/:id",
-        element: <EstateDetails />,
+        element: (
+          <PrivateRoute>
+            <EstateDetails />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/signIn",

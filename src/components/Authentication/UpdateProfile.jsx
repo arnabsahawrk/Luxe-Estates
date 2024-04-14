@@ -29,7 +29,17 @@ const Register = () => {
 
     updateUserProfile(name, photoURL)
       .then(() => {
-        toast.success("Your Profile Updated.");
+        toast.success("Your Profile Updated.", {
+          style: {
+            border: "1px solid #06112A",
+            padding: "16px",
+            color: "#06112A",
+          },
+          iconTheme: {
+            primary: "#5EA51D",
+            secondary: "#FFFAEE",
+          },
+        });
 
         setUser((prevUser) => ({
           ...prevUser,

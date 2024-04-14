@@ -7,7 +7,7 @@ import {
 } from "@material-tailwind/react";
 import { FaFacebookF, FaGithub, FaGoogle } from "react-icons/fa";
 // import { FaXTwitter } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import useAuth from "../../hooks/useAuth";
 import toast from "react-hot-toast";
@@ -20,6 +20,8 @@ const LogIn = () => {
     reset,
     formState: { errors },
   } = useForm();
+  const location = useLocation();
+  const navigate = useNavigate();
 
   //Sign In
   const handleLogIn = (data) => {
@@ -27,7 +29,18 @@ const LogIn = () => {
 
     signInUser(email, password)
       .then(() => {
-        toast.success("Sign In Successfully.");
+        toast.success("Sign In Successfully.", {
+          style: {
+            border: "1px solid #06112A",
+            padding: "16px",
+            color: "#06112A",
+          },
+          iconTheme: {
+            primary: "#5EA51D",
+            secondary: "#FFFAEE",
+          },
+        });
+        navigate(location?.state || "/");
       })
       .catch(() => {
         toast.error("Invalid User.");
@@ -39,7 +52,18 @@ const LogIn = () => {
   const googleUser = () => {
     signInWithMedium("google")
       .then(() => {
-        toast.success("Authenticate Successfully.");
+        toast.success("Authenticate Successfully.", {
+          style: {
+            border: "1px solid #06112A",
+            padding: "16px",
+            color: "#06112A",
+          },
+          iconTheme: {
+            primary: "#5EA51D",
+            secondary: "#FFFAEE",
+          },
+        });
+        navigate(location?.state || "/");
       })
       .catch(() => {
         toast.error("Failed To Authenticate.");
@@ -50,7 +74,18 @@ const LogIn = () => {
   const facebookUser = () => {
     signInWithMedium("facebook")
       .then(() => {
-        toast.success("Authenticate Successfully.");
+        toast.success("Authenticate Successfully.", {
+          style: {
+            border: "1px solid #06112A",
+            padding: "16px",
+            color: "#06112A",
+          },
+          iconTheme: {
+            primary: "#5EA51D",
+            secondary: "#FFFAEE",
+          },
+        });
+        navigate(location?.state || "/");
       })
       .catch(() => {
         toast.error("Failed To Authenticate.");
@@ -61,7 +96,18 @@ const LogIn = () => {
   const githubUser = () => {
     signInWithMedium("github")
       .then(() => {
-        toast.success("Authenticate Successfully.");
+        toast.success("Authenticate Successfully.", {
+          style: {
+            border: "1px solid #06112A",
+            padding: "16px",
+            color: "#06112A",
+          },
+          iconTheme: {
+            primary: "#5EA51D",
+            secondary: "#FFFAEE",
+          },
+        });
+        navigate(location?.state || "/");
       })
       .catch(() => {
         toast.error("Failed To Authenticate.");

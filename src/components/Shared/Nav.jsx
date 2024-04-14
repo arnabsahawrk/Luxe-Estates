@@ -7,13 +7,35 @@ import {
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useEffect, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import profile from "../../assets/images/profile.png";
 import useAuth from "../../hooks/useAuth";
+import toast from "react-hot-toast";
 
 function NavList() {
   //Auth
   const { user, signOutUser } = useAuth();
+
+  //Sign Out
+  const signOut = () => {
+    signOutUser()
+      .then(() => {
+        toast.success("Sign Out Successfully.", {
+          style: {
+            border: "1px solid #06112A",
+            padding: "16px",
+            color: "#06112A",
+          },
+          iconTheme: {
+            primary: "#5EA51D",
+            secondary: "#FFFAEE",
+          },
+        });
+      })
+      .catch(() => {
+        toast.error("Failed, Try Again.");
+      });
+  };
 
   return (
     <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-4">
@@ -99,7 +121,7 @@ function NavList() {
               </button>
             </Link>
             <button
-              onClick={signOutUser}
+              onClick={signOut}
               rel="noopener noreferrer"
               className="px-4 py-2 font-semibold text-sm md:text-base rounded-lg bg-[#5EA51D] text-white transition duration-1000 ease-in-out hover:bg-[#06112A] animate__animated animate__slideInUp"
             >
@@ -124,6 +146,30 @@ function NavList() {
 const Nav = () => {
   //Auth
   const { user, signOutUser } = useAuth();
+  const navigate = useNavigate();
+
+  //Sign Out
+  const signOut = () => {
+    signOutUser()
+      .then(() => {
+        toast.success("Sign Out Successfully.", {
+          style: {
+            border: "1px solid #06112A",
+            padding: "16px",
+            color: "#06112A",
+          },
+          iconTheme: {
+            primary: "#5EA51D",
+            secondary: "#FFFAEE",
+          },
+        });
+
+        navigate("/");
+      })
+      .catch(() => {
+        toast.error("Failed, Try Again.");
+      });
+  };
 
   const [openNav, setOpenNav] = useState(false);
 
@@ -189,7 +235,7 @@ const Nav = () => {
                 </button>
               </Link>
               <button
-                onClick={signOutUser}
+                onClick={signOut}
                 rel="noopener noreferrer"
                 className="lg:px-4 lg:py-2 font-semibold lg:text-base rounded-lg bg-[#5EA51D] text-white transition duration-1000 ease-in-out hover:bg-[#06112A] animate__animated animate__slideInUp"
               >

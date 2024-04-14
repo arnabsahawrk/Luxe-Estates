@@ -5,7 +5,7 @@ import {
   Button,
   Typography,
 } from "@material-tailwind/react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import useAuth from "../../hooks/useAuth";
 import toast from "react-hot-toast";
@@ -18,6 +18,7 @@ const Register = () => {
     reset,
     formState: { errors },
   } = useForm();
+  const navigate = useNavigate();
 
   //Register
   const handleRegister = (data) => {
@@ -26,7 +27,17 @@ const Register = () => {
     //Create
     createUser(email, password)
       .then(() => {
-        toast.success("Successfully Registered.");
+        toast.success("Successfully Registered.", {
+          style: {
+            border: "1px solid #06112A",
+            padding: "16px",
+            color: "#06112A",
+          },
+          iconTheme: {
+            primary: "#5EA51D",
+            secondary: "#FFFAEE",
+          },
+        });
         //Update Profile
         updateUserProfile(name, photoURL).then(() => {
           setUser((prevUser) => ({
@@ -35,6 +46,8 @@ const Register = () => {
             photoURL: photoURL,
           }));
         });
+
+        navigate("/");
       })
       .catch(() => {
         toast.error("Registered Denied.");
