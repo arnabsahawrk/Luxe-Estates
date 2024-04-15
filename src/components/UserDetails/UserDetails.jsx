@@ -24,14 +24,14 @@ const UserDetails = () => {
           color="blue-gray"
           className="mb-2 text-[#06112A]"
         >
-          {user?.displayName || "Anonymous"}
+          Name: {user?.displayName || "Anonymous"}
         </Typography>
         <Typography
           color="blue-gray"
           className="font-medium text-[#848093]"
           textGradient
         >
-          {user?.email || "Not Given"}
+          Email: {user?.email || "Not Given"}
         </Typography>
       </CardBody>
     </Card>
